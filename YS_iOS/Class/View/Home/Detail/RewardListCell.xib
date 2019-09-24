@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RewardListCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekA-UV-up6">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="FKQ-z7-EgL"/>
+                            <constraint firstAttribute="width" constant="30" id="sbd-rk-teg"/>
+                        </constraints>
+                        <state key="normal" image="pl_header"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人间四月天打赏了该篇文章" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vI3-D9-bO3">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="gwE-rC-Ah3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016.11.11 10:10:10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjt-Pg-WFg">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="KAO-nm-ZAi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.60392156862745094" green="0.62745098039215685" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exJ-5y-kog">
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Cnp-UH-iOH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="exJ-5y-kog" secondAttribute="trailing" id="6I2-ce-2Rd"/>
+                    <constraint firstItem="exJ-5y-kog" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Mq4-On-Fia"/>
+                    <constraint firstItem="vI3-D9-bO3" firstAttribute="leading" secondItem="ekA-UV-up6" secondAttribute="trailing" constant="10" id="RJf-bB-lhP"/>
+                    <constraint firstItem="ekA-UV-up6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="WEx-ZA-epk"/>
+                    <constraint firstItem="ekA-UV-up6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Z5d-OB-2lS"/>
+                    <constraint firstItem="Gjt-Pg-WFg" firstAttribute="top" secondItem="vI3-D9-bO3" secondAttribute="bottom" constant="3" id="dnB-vg-j4k"/>
+                    <constraint firstItem="vI3-D9-bO3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="enm-SM-vPf"/>
+                    <constraint firstAttribute="bottom" secondItem="exJ-5y-kog" secondAttribute="bottom" id="jx7-W7-5Cp"/>
+                    <constraint firstItem="Gjt-Pg-WFg" firstAttribute="leading" secondItem="ekA-UV-up6" secondAttribute="trailing" constant="10" id="u5A-kg-R3P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="ekA-UV-up6" id="pB1-UH-27E"/>
+                <outlet property="timeLabel" destination="Gjt-Pg-WFg" id="4VB-r3-dCV"/>
+                <outlet property="titleLabel" destination="vI3-D9-bO3" id="Ign-Ok-HSx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pl_header" width="36" height="36"/>
+    </resources>
+</document>

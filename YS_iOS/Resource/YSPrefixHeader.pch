@@ -1,0 +1,44 @@
+//
+//  B2CPrefixHeader.pch
+//  b2c_user_ios
+//
+//  Created by 崔露凯 on 16/10/31.
+//  Copyright © 2016年 cuilukai. All rights reserved.
+//
+
+#ifndef YSPrefixHeader_pch
+#define YSPrefixHeader_pch
+
+
+#import "AppMacro.h"
+#import "NotificationMacro.h"
+#import "VendorMacro.h"
+#import <UIKit/UIKit.h>
+#import "UIViewExt.h"
+#import "UIView+XMGExtension.h"
+#import "NSString+Custom.h"
+#import "UIColor+Custom.h"
+#import "Masonry.h"
+#import "UILabel+Custom.h"
+#import "UIButton+Custom.h"
+#import "Singleton.h"
+#import "NSObject+MJKeyValue.h"
+#import "UIButton+EnLargeEdge.h"
+#import "UIImageView+WebCache.h"
+#import "NSString+MJExtension.h"
+#import "UIBarButtonItem+BackItem.h"
+#import "UIApplication+Custom.h"
+#import "NSString+TextView.h"
+#import "UIImage+ImageEffects.h"
+#import "LKViewAttribute.h"
+#import "HttpRequestTool.h"
+#import "UIVew+StringTag.h"
+#import "UserDefaultsUtil.h"
+#import "UIImage+Custom.h"
+
+#import "BaseViewController+UMShare.h"
+
+#import "AppColorMacro.h"
+
+
+#endif /* YSPrefixHeader_pch */

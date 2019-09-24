@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymk-Ew-LKf">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_edit" translatesAutoresizingMaskIntoConstraints="NO" id="eDR-Ks-itc">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="It2-Ub-pjt"/>
+                                <constraint firstAttribute="height" constant="16" id="fRn-f2-Tdc"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="说点什么吧..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kit-Ga-U7L">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="uZ7-5W-rXb"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Kit-Ga-U7L" firstAttribute="centerY" secondItem="Ymk-Ew-LKf" secondAttribute="centerY" id="GKz-lp-A4S"/>
+                        <constraint firstItem="Kit-Ga-U7L" firstAttribute="leading" secondItem="eDR-Ks-itc" secondAttribute="trailing" constant="5" id="NlD-7I-TQW"/>
+                        <constraint firstAttribute="trailing" secondItem="Kit-Ga-U7L" secondAttribute="trailing" constant="12" id="PZf-TF-eTm"/>
+                        <constraint firstAttribute="height" constant="34" id="Z0h-yD-hBe"/>
+                        <constraint firstItem="eDR-Ks-itc" firstAttribute="centerY" secondItem="Ymk-Ew-LKf" secondAttribute="centerY" id="el3-0Y-1UB"/>
+                        <constraint firstItem="eDR-Ks-itc" firstAttribute="leading" secondItem="Ymk-Ew-LKf" secondAttribute="leading" constant="6" id="wkX-1x-ats"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ymk-Ew-LKf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Fht-tf-BoM"/>
+                <constraint firstItem="Ymk-Ew-LKf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="Fri-d1-QVw"/>
+                <constraint firstAttribute="trailing" secondItem="Ymk-Ew-LKf" secondAttribute="trailing" constant="12" id="KUt-SZ-Xf5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textField" destination="Kit-Ga-U7L" id="efx-61-aW2"/>
+            </connections>
+            <point key="canvasLocation" x="69.5" y="65.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_edit" width="16" height="17"/>
+    </resources>
+</document>

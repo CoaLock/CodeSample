@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="FocusDetailCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="275"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="275"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhangyang123" translatesAutoresizingMaskIntoConstraints="NO" id="eBa-rB-MJd">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eBa-rB-MJd" secondAttribute="height" multiplier="1:1" id="xle-7r-adT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个匠人之心，用三年时光拍摄的自然之美" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydo-pZ-Kfz">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7SX-A1-tU6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZY-Sg-F5b" userLabel="lineH">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.31778017241379308" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="75H-Ra-Yxr"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sst-LD-m4H">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="100">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34P-TV-xdw">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="100">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0v-Ap-Np9">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="100">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="eBa-rB-MJd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4eU-Tk-Tjl"/>
+                <constraint firstAttribute="trailing" secondItem="Ydo-pZ-Kfz" secondAttribute="trailing" constant="10" id="6uh-vI-F1Z"/>
+                <constraint firstItem="L0v-Ap-Np9" firstAttribute="bottom" secondItem="34P-TV-xdw" secondAttribute="bottom" id="6yG-rv-3KG"/>
+                <constraint firstAttribute="trailing" secondItem="eBa-rB-MJd" secondAttribute="trailing" id="7vV-dq-HlG"/>
+                <constraint firstItem="Sst-LD-m4H" firstAttribute="leading" secondItem="34P-TV-xdw" secondAttribute="trailing" id="ACY-22-CCk"/>
+                <constraint firstAttribute="trailing" secondItem="L0v-Ap-Np9" secondAttribute="trailing" id="AFe-QA-Qne"/>
+                <constraint firstItem="34P-TV-xdw" firstAttribute="leading" secondItem="Ydo-pZ-Kfz" secondAttribute="leading" id="AaE-P8-x66"/>
+                <constraint firstItem="Sst-LD-m4H" firstAttribute="top" secondItem="34P-TV-xdw" secondAttribute="top" id="CTF-oM-R9F"/>
+                <constraint firstItem="Ydo-pZ-Kfz" firstAttribute="top" secondItem="eBa-rB-MJd" secondAttribute="bottom" constant="7" id="EfM-UR-GDg"/>
+                <constraint firstItem="L0v-Ap-Np9" firstAttribute="width" secondItem="34P-TV-xdw" secondAttribute="width" id="FGE-tn-l3c"/>
+                <constraint firstItem="L0v-Ap-Np9" firstAttribute="height" secondItem="34P-TV-xdw" secondAttribute="height" id="Gbi-Wm-PXb"/>
+                <constraint firstItem="L0v-Ap-Np9" firstAttribute="leading" secondItem="Sst-LD-m4H" secondAttribute="trailing" id="INN-9x-cpg"/>
+                <constraint firstItem="Sst-LD-m4H" firstAttribute="bottom" secondItem="34P-TV-xdw" secondAttribute="bottom" id="KlF-wB-IAW"/>
+                <constraint firstItem="Sst-LD-m4H" firstAttribute="height" secondItem="34P-TV-xdw" secondAttribute="height" id="L8x-6x-vgW"/>
+                <constraint firstItem="eZY-Sg-F5b" firstAttribute="top" secondItem="Ydo-pZ-Kfz" secondAttribute="bottom" constant="7" id="MTK-US-vFJ"/>
+                <constraint firstItem="Ydo-pZ-Kfz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="NBA-VW-ELA"/>
+                <constraint firstItem="Sst-LD-m4H" firstAttribute="leading" secondItem="34P-TV-xdw" secondAttribute="trailing" id="SOt-XE-ouF"/>
+                <constraint firstItem="L0v-Ap-Np9" firstAttribute="top" secondItem="34P-TV-xdw" secondAttribute="top" id="TRc-aI-Hpb"/>
+                <constraint firstItem="eBa-rB-MJd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TVP-XR-LwT"/>
+                <constraint firstItem="eZY-Sg-F5b" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="VUe-ND-pFX"/>
+                <constraint firstAttribute="trailing" secondItem="eZY-Sg-F5b" secondAttribute="trailing" constant="5" id="hai-VU-fV3"/>
+                <constraint firstAttribute="bottom" secondItem="34P-TV-xdw" secondAttribute="bottom" constant="4" id="o9X-9Q-QpO"/>
+                <constraint firstItem="L0v-Ap-Np9" firstAttribute="leading" secondItem="Sst-LD-m4H" secondAttribute="trailing" id="sfy-Fe-Y1z"/>
+                <constraint firstItem="Sst-LD-m4H" firstAttribute="width" secondItem="34P-TV-xdw" secondAttribute="width" id="yFc-Bz-FUt"/>
+            </constraints>
+            <size key="customSize" width="127" height="204"/>
+            <connections>
+                <outlet property="detailCollectImage" destination="eBa-rB-MJd" id="TWW-4g-onH"/>
+                <outlet property="detailCollectLabel" destination="Ydo-pZ-Kfz" id="lJx-5Q-V9N"/>
+                <outlet property="detailImAnswerButton" destination="Sst-LD-m4H" id="SUe-Oz-jAp"/>
+                <outlet property="detailSharebutton" destination="34P-TV-xdw" id="CKf-gx-fAR"/>
+                <outlet property="detailThrumClick" destination="L0v-Ap-Np9" id="Yfv-e2-9wh"/>
+            </connections>
+            <point key="canvasLocation" x="-60" y="-10.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="zhangyang123" width="470" height="268"/>
+    </resources>
+</document>
